@@ -6,7 +6,7 @@
 /*   By: mcreus <mcreus@student.42perpignan.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 18:28:14 by mcreus            #+#    #+#             */
-/*   Updated: 2023/10/26 18:45:31 by mcreus           ###   ########.fr       */
+/*   Updated: 2023/10/27 12:22:26 by mcreus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,25 @@ int	main()
 	double	doubleTab[] = {1.1, 2.2, 3.3, 4.4, 5.5};
 	char	charTab[] = {'a', 'b', 'c', 'd', 'e'};
 
+    std::cout << "----------------------------------------------" << std::endl;
+	std::cout << "---------------First test---------------------" << std::endl;
+	std::cout << "----------------------------------------------" << std::endl;
+
 	std::cout << "Tableau d'entiers : ";
     ::iter(intTab, 5, afficheElement<int>);
     std::cout << std::endl;
 
+    std::cout << "----------------------------------------------" << std::endl;
+	std::cout << "---------------Second test--------------------" << std::endl;
+	std::cout << "----------------------------------------------" << std::endl;
+
     std::cout << "Tableau de doubles : ";
     ::iter(doubleTab, 5, afficheElement<double>);
     std::cout << std::endl;
+
+    std::cout << "----------------------------------------------" << std::endl;
+	std::cout << "---------------Third test---------------------" << std::endl;
+	std::cout << "----------------------------------------------" << std::endl;
 
 	std::cout << "Tableau de char : ";
     ::iter(charTab, 5, afficheElement<char>);
